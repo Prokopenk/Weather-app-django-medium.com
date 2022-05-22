@@ -11,7 +11,7 @@ def home(request):
         city = request.POST['city']
         # retrieve imformation from weather api = https://api.openweathermap.org/api
         source = urllib.request.urlopen(
-            'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=c039398a7befd0512a9e0fde0b1953d6').read()
+            'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=Your API HERE!!!!').read()
 
         # convert  json file into python dictionary
         list_of_data = json.loads(source)
